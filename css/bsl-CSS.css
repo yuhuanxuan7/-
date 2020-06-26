@@ -1,0 +1,204 @@
+
+#allcontent {
+    /*follow the specification, width between 510 and 960 pixels */
+    width: 800px;
+    /*to ensure all content stay in the middle*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*set head title color*/
+h1 {
+    color: #004B83;
+}
+/*set head title color*/
+h2 {
+    color: #004B83;
+}
+
+
+div {
+    margin: auto;
+}
+
+/*navigation style*/
+#header {
+    margin: auto;
+    overflow: hidden; /*block formatting context*/
+    background-color: #004B83;
+}
+
+
+.nav  {
+    padding: 0;/*avoid gap between content and inner margin*/
+    float: right;
+}
+
+.nav li {
+    display: inline-block;
+    margin-left: 30px; /*gaps between each phrases*/
+}
+
+.nav a {
+    line-height: 30px;
+    font-size: 15px;
+    color: #EFFFFF; /*phrases color*/
+    text-decoration: none; /*remove underline*/
+}
+
+/*a pull menu*/
+/*No specification find here, so just basic display*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #004B83;
+}
+
+.dropdown-content a {
+    color: #EFFFFF;
+    display: block;
+}
+
+
+/*set horizontal's color to achieve bsl-CSS.png*/
+/*color should be hexadecimal*/
+hr {
+    background-color: #004B83;
+    padding: 0; /*ensure no gap*/
+    height: 5px;
+    clear: both;
+}
+
+
+/*History part*/
+#history  {
+    overflow: hidden;
+
+}
+
+.h-img {
+    float: right;
+}
+
+
+/*linguistic part*/
+/*create two equal column*/
+.content {
+    display: flex;
+
+}
+
+.content-left {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 50%;
+    border: 3px #004b85 double;
+}
+
+.map img {
+    width: 100%; /*ensure map within the border*/
+}
+
+.map p {
+    width: 280px;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.content-left hr {
+    width: 360px; /*support width for the left table*/
+    border: 1px solid #004b85;
+    margin: 10px;
+}
+
+.content-left .sub-title{
+    padding-bottom: 10px;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.list{
+    font-size: 10px;
+    padding: 15px;
+}
+
+/*using a grid display to fix the view point*/
+.sample{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+/*position adjust*/
+.content-right {
+    flex: 1;
+    align-items: flex-start;
+    padding: 0 0 0 15px;
+    font-size: 14px;
+}
+
+.content-right ul{
+    padding-left: 25px; /*small adjust*/
+}
+
+/*british sign language*/
+#media {
+    float: right;
+    border: 5px #D2D2D2 solid;
+    border-radius: 25px; /*round angle*/
+
+}
+
+#media object {
+    padding: 20px;
+
+}
+
+#media p {
+    text-align: center;
+}
+
+
+/*sign language: letters*/
+/*sign language: numbers*/
+.responsive {
+    margin:10px ; /*gap between images*/
+    display: inline-block;
+    border:1px solid #bebebe;
+    text-align: center; /*vocabulary in the center*/
+    font-size:10px;
+    align-content: center; /*imgs in the center*/
+    justify-content: space-evenly;
+}
+
+.responsive p{
+    background-color: #004B83;
+    color:#ffffff;
+    margin: 0; /*no gaps between text and its border*/
+    height: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 992px){
+    .responsive {
+        width: 25%;
+        margin: 10px;/*gap between images*/
+    }
+}
+
+
+
+
