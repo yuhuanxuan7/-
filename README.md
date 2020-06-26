@@ -8,3 +8,4 @@ Java作业主要涉及的内容:
 
 * MySQL: 基本的关系型数据库设计, 基本的SQL语句.
 * Linux: 基本的 Linux命令以及Bash Script.
+* WebTechnology: 基本的 CSS, HTML, JavaScript, 在一定的限制下完成一定的要求
