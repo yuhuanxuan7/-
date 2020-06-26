@@ -1,0 +1,40 @@
+CSC8008 Assignment
+
+Aims:
+
+To assess your ability to:
+
+•	Design a relational database, expressing that design in an entity-relationship diagram.
+•	Implement the design in MySQL.
+•	Construct SQL queries over the resulting database implementation.
+
+Problem Statement:
+
+The organisers of a music festival have asked you to design a database which they can use to provide more efficient administration during the festival.
+
+The festival consists of a number of concerts by different artists at different venues. Some venues host more than one concert during the festival. Some popular artists are scheduled to appear at multiple concerts, whilst most concerts feature multiple artists appearing. 
+
+Customers have to book tickets for concerts in advance. There are no limits on the number of concerts a customer may attend. If a customer wishes to buy many tickets for one concert the organisers only need to know the details of the customer who is actually making the booking.
+
+The organisers need to store basic contact details for customers. For artists, basic contact details are required, a brief biography and the name and contact details for their booking agent. Note – a booking agent is a person or company which represents an artist and handles the administration surrounding booking that artist to appear at concerts. One agent might represent multiple artists.
+
+For each venue basic contact details, the venue’s seating capacity and the telephone number of the venue manger are required.
+
+Finally, the organisers would like you to include some information about each concert - the date, start time, venue and the number of tickets sold so far. Each concert also has a unique reference number (starting at 1) which is used in the festival programme.
+
+
+ 
+Tasks:
+
+1)	Draw an entity-relationship diagram for the above scenario. You must explain any assumptions that you make during the design process. (20 marks).
+
+2)	Implement your design in MySQL. Populate your database tables with data of your choice. However, you should ensure there is a venue with the name ‘Civic Centre’ to enable you to answer part 3c below. If you make any changes to your original design from Task 1, these must be explained. NB: Remember to include the SQL statements you used to create your tables in your answer document. If you do not do this you will not gain the marks for this section (10 marks).
+
+3)	Construct SQL queries for the following (16 marks). In ALL cases, include screenshots showing the results of your queries – instructions on how to do this are given at the end of this document.
+
+a.	List the name and seating capacity of all venues starting with the largest.
+b.	List the names of all customers booked to see concert number 2. 
+c.	List the number of artists represented by each booking agent.
+d.	List the names of all artists who appear in a concert at the Civic Centre. 
+
+4)	Explain how you could find out how many tickets for concert 1 remain unsold. Give the SQL for any queries you would need to execute (4 marks).
